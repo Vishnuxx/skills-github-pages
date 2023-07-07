@@ -1,6 +1,5 @@
 ---
-layout: post
-title: "Five-Clean-code-Tips-that-would-make-you-a-pro-coder"
+title: "Five Clean code Tips that would make you a pro coder"
 date: 2023-07-08
 ---
 
