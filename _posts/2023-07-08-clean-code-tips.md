@@ -6,14 +6,17 @@ layout: post
 
 # Five Tips of Clean Coding
 
-Clean coding is an essential practice for developers to produce high-quality, maintainable code. Some of you might argue that what is all about the clean code? If a code can function, then it’s just enough. Well, it’s not. We all think about that when we used to write programs in a computer science lab, our educational projects and on our semester practical exams but the real world is totally different. <br/>
+Clean coding is an essential practice for developers to produce high-quality, maintainable code. Some of you might argue that what is all about the clean code? If a code can function, then it’s just enough. Well, it’s not. We all think about that when we used to write programs in a computer science lab, our educational projects and on our semester practical exams but the real world is totally different. 
+<br/>
 In this blog, we'll explore some tips of writing clear, organized, and easy-to-understand code. <br/>  <br/>
-By following these five steps, you can ensure your code is readable, efficient, and easy to understand.
+
 
 
 ## 1. Meaningful Variable Names
 
 Choose descriptive names for variables that accurately represent their purpose. Avoid using single-letter or ambiguous names that can confuse other developers. Clear and concise variable names enhance code readability and make it easier to maintain and debug.
+<br/>
+No matter whether you are a beginner or a pro coder. Practicing this would significantly help you to write better code in the long term.
 
 ```
 #Bad Example
@@ -50,9 +53,11 @@ def my_function():
         i += 1
 ```
 
+Unlike Python , many other programming languages that uses curly brackets {} over indentation. So it is essential to maontain a proper format to your codebase 
+
 ## 3. Modularity and DRY Principle
 
-Break down your code into modular and reusable components. Apply the DRY (Don't Repeat Yourself) principle by extracting common functionality into separate functions or classes. This promotes code reusability, reduces duplication, and enhances maintainability.
+Break down your code into modular and reusable components. Apply the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) (Don't Repeat Yourself) principle by extracting common functionality into separate functions or classes. This can ensure code reusability, reduces duplication, and enhances maintainability.
 
 ```
 # Bad Example
@@ -60,6 +65,7 @@ def calculate_area(length, width):
     area = length * width
     print("The area is:", area)
     calculate_perimeter(length, width)
+
 def calculate_perimeter(length, width):
     perimeter = 2 * (length + width)
     print("The perimeter is:", perimeter)
@@ -69,6 +75,7 @@ def calculate_perimeter(length, width):
 def calculate_area(length, width):
     area = length * width
     print("The area is:", area)
+
 def calculate_perimeter(length, width):
     perimeter = 2 * (length + width)
     print("The perimeter is:", perimeter)
@@ -78,7 +85,7 @@ calculate_perimeter(5, 10)
 
 ## 4. Comments and Documentation
 
-Include clear and concise comments to explain the intent and functionality of your code. Document complex algorithms, important decisions, and any external dependencies. Well-documented code improves collaboration among developers and enables faster troubleshooting.
+Try to include clear and concise comments to explain the intent and functionality of your code. Document complex algorithms, important decisions, and any external dependencies so that anyone can read and understand your code more easily . This could improve the collaboration among developers to next level and enables easy and faster troubleshooting.
 
 ```
 # Bad Example
@@ -107,12 +114,12 @@ def calculate(x, y):
 
 ## 5. Testing and Refactoring
 
-Implement thorough unit tests to verify the correctness of your code. Regularly refactor your codebase to eliminate redundancy, improve performance, and enhance overall code quality. Testing and refactoring ensure that your code remains robust and adaptable to changing requirements.
+Implement thorough unit tests helps you to verify the correctness of your code. Regularly refactor your codebase to eliminate redundancy, improve performance, and enhance overall code quality. Testing and refactoring ensure that your code remains robust and adaptable to changing requirements.
 
-By following these steps, you can write clean, maintainable code that is easier to understand, modify, and collaborate on, leading to more efficient and successful software development projects.
 
 ```
 # Bad Example
+
 def is_even(number):
     if number % 2 == 0:
         return True
@@ -120,7 +127,10 @@ def is_even(number):
         return False
 ```
 ```
-# Good Example
+# Good Example (Refactored code)
+
 def is_even(number):
     return number % 2 == 0
 ```
+
+Hope you have got the idea , now you can level up your coding journey!
